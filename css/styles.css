@@ -33,8 +33,18 @@
     box-sizing: border-box;
 }
 
-.log-fields-table{
-    padding: 20px 10px ;
-    margin-left: auto;
-    margin-right: auto;
+.input-line{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.input-line label{
+    border: 1px solid red;
+    float: left;
+    text-align: right;
+    width: 200px;
+}
+
+.input-line input{
+    float: left;
 }
