@@ -1,3 +1,28 @@
+body {
+    width: 100%;
+    margin: 0px;
+    background-image: url("../images/back.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header-content, footer {
+    text-align: center;
+}
+
+.header-content * {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.header-content h1 {
+    vertical-align: 65%
+}
+
+header img {
+    height: 80px;
+}
 
 .page-description-line {
     width: 100%;
@@ -8,43 +33,129 @@
     box-sizing: border-box;
 }
 
-.page-description-line p {
-    align-items: center;
-    margin: 3px;
-    float:right;
+.page-description-line strong{
+    margin: 0px 5px;
 }
 
-.left-container{
-    display:inline-block;
-    width: 20%;
+.page-description-line * {
+    vertical-align: 50%;
+    align-items: center;
+    margin: 3px;
+    float: right;
+}
+
+.box {
+    border: 1px solid black;
     box-sizing: border-box;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.main-container * {
+    margin: 0px;
+    padding: 2px;
+}
+
+.central-container fieldset {
+    margin: 0px;
 }
 
 .central-container {
-    display:inline-block;
+   float: left;
     width: 60%;
-    box-sizing: border-box;
 }
 
-.right-container{
-    display:inline-block;
+.left-container {
     width: 20%;
-    background-color: aqua;
-    box-sizing: border-box;
+    float: left;
+    display: inline-block;
 }
 
-.input-line{
+.right-container {
+    width: 20%;
+    float: left;
+}
+
+.input-line {
     overflow: hidden;
     box-sizing: border-box;
 }
 
-.input-line label{
-    border: 1px solid red;
-    float: left;
-    text-align: right;
-    width: 200px;
+.input-line * {
+    margin: 5px 2px;
 }
 
-.input-line input{
+.input-line label {
     float: left;
+    text-align: right;
+    width: 150px;
+}
+
+.input-line input {
+    float: left;
+    height: 15px;
+}
+.input-line button {
+    width: 120px;
+    height: 25px;
+}
+
+/*--------------------------*/
+
+.files-table{
+    width: 100%;
+    text-align: center;
+}
+
+.files-table tr:nth-child(even) {
+    background-color: #eee;
+}
+.files-table tr:nth-child(odd) {
+    background-color: greenyellow;
+}
+.files-table th {
+    color: white;
+    background-color: black;
+}
+
+/*-------------------------------*/
+
+.form-container fieldset{
+    margin: 3px;
+}
+
+
+.download-set button {
+    float: left;
+    width: 15%;
+    height: 25px;
+}
+
+.download-set input {
+    width: 75%;
+    height: 19px;
+    margin-left: 15px;
+}
+
+
+.request-set button {
+    float: left;
+    width: 15%;
+    height: 25px;
+}
+
+.request-set input[type=text]{
+    width: 85%;
+    height: 19px;
+}
+
+.request-set input[type=checkbox]{
+    margin-top: 13px;
+}
+
+
+
+.request-set h3 {
+    float: left;
+
 }

@@ -2,49 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Login</title>
 
     <link rel="stylesheet" href="../css/styles.css"/>
 </head>
-<body style="margin: 0px; ">
-
+<body>
 <header>
-
-    <div class="page-description-line">
-        <p>ЕЙ, читер! Необходимо выполнить вход в систему!</p>
+    <div class="header-content">
+        <img src="../images/dir.png">
+        <h1>Файловое хранилище v 0.01 (потеряй свои файлы красиво ;))</h1>
+        <img src="../images/dir.png">
     </div>
 </header>
 
+
+<div class="page-description-line">
+    <p>ЕЙ, читер! Необходимо выполнить вход в систему!</p>
+</div>
+
 <div class="main-container">
 
-    <div class="left-container">
+    <div class="left-container box">
 
     </div>
 
-    <div class="central-container">
+    <div class="central-container box">
 
         <div class="login-box">
-
-            <div class="input-line">
-                <label>Логин:</label>
-                <input type="text"/><br>
-            </div>
-
+            <fieldset>
+                <div class="input-line">
+                    <label>Логин:</label>
+                    <input type="text"/><br>
+                </div>
+                <div class="input-line">
+                    <label>Пароль:</label>
+                    <input type="password"/><br>
+                </div>
+                <div class="input-line">
+                    <label>Запомнить:</label>
+                    <input type="checkbox"/><br>
+                </div>
+                <div class="input-line">
+                    <label></label>
+                    <button type="submit">Войти</button>
+                </div>
+            </fieldset>
         </div>
 
 
     </div>
 
-    <div class="right-container">
-
+    <div class="right-container box">
+        <section>
+            <h4>Статистика: </h4>
+            <p>Пользователи: 123</p>
+            <p>Файлы: 1234</p>
+            <p>Размер, Мб: 2345</p>
+            <p>Размер/Пользователь, Мб: 45</p>
+        </section>
     </div>
 
 </div>
 
 <footer>
-
+    <p>&copy; 2017, EPAM RD HTML&CSS TRAINING</p>
 </footer>
-
 
 </body>
 </html>
