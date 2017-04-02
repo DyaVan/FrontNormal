@@ -145,7 +145,8 @@ header img {
 }
 
 .request-set input[type=text]{
-    width: 85%;
+    float: none;
+    width: 90%;
     height: 19px;
 }
 
