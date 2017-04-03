@@ -5,7 +5,10 @@
     <title>Login</title>
 
     <link rel="stylesheet" href="../css/styles.css"/>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/login_validation.js"></script>
 </head>
+
 <body>
 <header>
     <div class="header-content">
@@ -29,24 +32,26 @@
     <div class="central-container box">
 
         <div class="login-box">
-            <fieldset>
-                <div class="input-line">
-                    <label>Логин:</label>
-                    <input type="text"/><br>
-                </div>
-                <div class="input-line">
-                    <label>Пароль:</label>
-                    <input type="password"/><br>
-                </div>
-                <div class="input-line">
-                    <label>Запомнить:</label>
-                    <input type="checkbox"/><br>
-                </div>
-                <div class="input-line">
-                    <label></label>
-                    <button type="submit">Войти</button>
-                </div>
-            </fieldset>
+            <form id="login-form" action="homePage.html">
+                <fieldset>
+                    <div class="input-line">
+                        <label>Логин:</label>
+                        <input id="login-input" type="text"/><br>
+                    </div>
+                    <div class="input-line">
+                        <label>Пароль:</label>
+                        <input id="password-input" type="text"/><br>
+                    </div>
+                    <div class="input-line">
+                        <label>Запомнить:</label>
+                        <input type="checkbox"/><br>
+                    </div>
+                    <div class="input-line">
+                        <label></label>
+                        <button id="btn-submit" type="submit">Войти</button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
 
 
