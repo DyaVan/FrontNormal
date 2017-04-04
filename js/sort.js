@@ -23,6 +23,8 @@
             }
             return value;
         });
+
+        sort("fName");
     });
 
 
@@ -53,10 +55,20 @@
 
     };
 
-    var direction = 1;
+    var directionFlag = 1;
+    var lastSort = "fName";
+
+    function getDirection(currentSort){
+        if(currentSort === lastSort) {
+            directionFlag*= -1;
+            return -directionFlag;
+        }
+        lastSort = currentSort;
+        return directionFlag = 1;
+    }
 
     function sort(column_name) {
-        direction *= -1;
+        var direction = getDirection(column_name);
         sortTable(t_data, column_name, direction);
     };
 

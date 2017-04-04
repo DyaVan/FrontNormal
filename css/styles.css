@@ -1,10 +1,6 @@
 body {
     width: 100%;
     margin: 0px;
-    background-image: url("../images/back.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .header-content, footer {
@@ -54,6 +50,14 @@ header img {
 .main-container * {
     margin: 0px;
     padding: 2px;
+}
+
+.main-container {
+    overflow: auto;
+    background-image: url("../images/back.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .central-container fieldset {
